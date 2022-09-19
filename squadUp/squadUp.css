@@ -1,0 +1,569 @@
+html {
+  -webkit-animation: fade_in 1s ease 0s 1 none;
+  animation: fade_in 1s ease 0s 1 none;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #000096;
+  background: url(./squadUp_img/efootball_bg_cl2.jpg);
+  background-size: 100% 100%;
+  padding: unset;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a[fix] {
+  background-color: transparent;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  height: 228px;
+}
+
+a[fix2] {
+  background-color: transparent;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  width: 265px;
+  height: 350px;
+  margin: 20px 20px 0 0;
+}
+a[fix4] {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.type-of-players_container-header {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    135deg,
+    rgba(93, 37, 201, 1) 0%,
+    rgba(93, 37, 201, 1) 15%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(93, 37, 201, 1) 85%,
+    rgba(93, 37, 201, 1) 100%
+  );
+}
+
+/*                                          loading container :                                                  */
+.loading-container {
+  position: fixed;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-out {
+  display: none;
+  transition: linear 300ms ease;
+}
+
+/* AUTO TOP BUTTON */
+
+.main-display2 {
+  display: none;
+}
+
+.autoTop-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  right: 2%;
+  bottom: 7%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(60, 60, 236, 0.5);
+  border: #ffffff solid 2px;
+  transition: all 0.4 ease;
+}
+
+.autoTop-button:hover {
+  cursor: pointer;
+}
+
+.unactive {
+  display: none !important;
+}
+
+/* ENd of section */
+
+select {
+  font-size: 17px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+select:hover {
+  background-color: #00efff;
+  color: black;
+}
+
+.head_container {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: red;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.head_list1 {
+  width: 60%;
+  height: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.head_list2 {
+  width: 25%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.head_list3 {
+  margin: 0 0 0 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.head_list3-input {
+  width: 7%;
+  border-radius: 100%;
+  height: 95%;
+  position: relative;
+  transition: all 0.4s linear;
+  /* border: rgba(0, 0, 0, 0.7) solid 3px; */
+}
+.head_list3-button {
+  width: 40px;
+  /* height: 19px; */
+  height: 80%;
+  position: absolute;
+  top: 5px;
+  left: 8.15%;
+  border-radius: 100%;
+  transition: all 0.4s linear;
+}
+.head_list3-button:hover {
+  cursor: pointer;
+}
+.head_list3-temp {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  width: 48px;
+  height: 90%;
+  left: 7.8%;
+  top: 2px;
+}
+.changeForm-input {
+  width: 100%;
+  border-radius: 60px;
+}
+.changeForm-button {
+  left: 56.6%;
+}
+
+.activeSignBox {
+  display: block !important;
+}
+
+.sign-in:hover {
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  cursor: pointer;
+}
+
+.box_item-notification {
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.box_item {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.box_item--lang {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.box_item-notification {
+}
+
+.box_item--lang:hover {
+  opacity: 0.8;
+}
+
+li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+li a:visited {
+  color: white;
+}
+
+.logo-efootball {
+  width: 30%;
+  height: 100px;
+}
+
+/* navbar */
+
+.navigation_for_laptop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+/* navbar for pc */
+
+.nav-bar {
+  width: 95%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f33fc;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px 5px 5px 5px;
+  z-index: 10;
+}
+
+.nav-item {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+  min-width: 12%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  z-index: 7;
+}
+
+.nav-item:hover {
+  background-color: #ffff1f;
+  color: #1f33fc !important;
+  cursor: pointer;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.nav-item:hover a[fix4] {
+  color: #1f33fc !important;
+}
+
+.nav-item:hover .gameOverview-list {
+  color: white;
+}
+
+.changeColor2 {
+  background-color: #ff0077;
+}
+
+.changeColor3 {
+  background-color: #ffff1f;
+  color: #1f33fc;
+}
+
+.gameOverview-list {
+  position: absolute;
+  width: 250px;
+  height: 80px;
+  background-color: #1f33fc;
+  color: white;
+  top: 175px;
+  left: 0px;
+  transform: translateY(-150%);
+  transition: clip-path linear 0.4s;
+  z-index: 5;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.gameOverview-items {
+  margin: 5px 0 0 5px;
+}
+
+.gameOverview-items:hover {
+  background-color: #ffff1f;
+  color: #1f33fc;
+}
+
+.gameOverview-list::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  background-color: #1f33fc;
+  width: 250px;
+  height: 30px;
+  z-index: 5;
+}
+#gameOverview-id:hover .gameOverview-list {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/*                                               FOR MOBILE :                                                */
+
+.navigation_for_mobile {
+  display: none;
+}
+
+.logo_for-mobile {
+  width: 100%;
+  height: 60px;
+}
+
+.navigation_for_mobile-item1 {
+  flex: 2;
+}
+
+.navigation_for_mobile-item2 {
+  display: flex;
+  flex: 1.7;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.download-button_for-mobile {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0077;
+  z-index: 7;
+}
+
+.nav-bar_for-mobile {
+  position: absolute;
+  background-color: #1f33fd;
+  width: 60%;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  display: none;
+  transition: 0.7 linear;
+}
+
+.nav-bar_for-mobile-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+.nav-bar_for-mobile-items:hover {
+  color: #1f33fd;
+  background-color: #ffff1f;
+}
+
+/*                                           Loading container                                                  */
+
+.loading-container {
+  position: fixed;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-out {
+  display: none;
+  transition: linear 300ms ease;
+}
+/*                                           Squad Up container                                                 */
+
+.squadUp-container {
+}
+.squadUp-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.squadUp-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+.squadUp-infor_manager {
+  width: 44%;
+  height: 130px;
+  margin: 0 0 50px 0;
+}
+.squadUp-infor_logoCLB {
+  width: 44%;
+  height: 130px;
+  margin: 0 0 50px 0;
+}
+.squadUp-infor_otherPlayer-container {
+  width: 44%;
+  height: 130px;
+  border-radius: 30px;
+  color: #1f33fc;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 500%;
+}
+.squadUp-infor_manager-img {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.squadUp-starting {
+  flex: 2.5;
+  border-left: 10px #ffff1f solid;
+  border-right: 10px #ffff1f solid;
+}
+.img-stadium {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.player {
+  width: 70px;
+  height: 70px;
+}
+.player-img {
+  width: 100%;
+  height: 100%;
+}
+.striker-field {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  top: 45%;
+  left: 25%;
+}
+.striker-field div:first-child,
+.striker-field div:last-child {
+  margin: 50px 0 0 0;
+}
+.middler-field1 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  top: 70%;
+  left: 25%;
+}
+.middler-field2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  top: 85%;
+  left: 25%;
+}
+.centerBack-field {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  top: 100%;
+  left: 25%;
+}
+.GK-field {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  top: 120%;
+  left: 25%;
+}
+.squadUp-strength {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.squadUp-strength-text {
+  margin: 0 0 30px 0;
+}
+.collective-strength {
+  width: 40%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #ffff1f solid 5px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 60px;
+  font-weight: 700;
+}
+.collective-strength-output {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  color: #ffff1f;
+  font-weight: 700;
+}
+
+.formation-output { 
+  font-size: 20px;
+  color: #ffff1f;
+  font-weight: 700;
+}
+.squadup-subs {
+}

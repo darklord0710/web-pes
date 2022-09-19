@@ -1,0 +1,430 @@
+h1 {
+    color: var(--ma-mau1);
+    margin: 100px 0 0 40%;
+    font-family: sans-serif;
+}
+
+p1 {
+    font-family: sans-serif;
+    color: aquamarine;
+    margin-bottom: 100px;
+}
+
+p1::selection {
+    color: red;
+    background-color: white;
+}
+
+#img1 {
+    width: 70%;
+    height: 300px;
+    background-image: url(https://images6.alphacoders.com/960/960901.jpg);
+    border: 5px dashed orange;
+    background-size: 100% 100%;
+    margin: 100px 0 0 200px;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+.dangnhap_set:visited {
+    color: green;
+}
+
+
+/* b1 : xác định flex-container
+   b2 : xác định flex-item 
+   b3 : 
+ */
+
+.header-block {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.header-list {
+    padding-left: 0;
+}
+
+.class-item {
+    color: white;
+    display: inline-flex;
+    margin: auto 20px;
+}
+
+.email {
+    padding: 30px 0 30px 0;
+    margin-top: 50px;
+    /* width: 100%; 
+    height: 200px; */
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.email-container {
+    margin: 50px auto 50px auto;
+    padding: 50px;
+    /* width: 900px;
+   height: 100px; */
+    background-color: yellow;
+    max-width: 1000px;
+}
+
+.form-row {
+    display: flex;
+    margin: 8px;
+}
+
+.name-company {
+    /* margin-left: 350px ; */
+    text-align: center;
+    color: #ea7c46;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.form-input {
+    flex: 1;
+}
+
+.form-label {
+    min-width: 60px;
+}
+
+.container-p2 {
+    margin: 30px auto 40px auto;
+    display: flex;
+    background-color: rgb(80, 255, 173);
+    flex-direction: column;
+}
+
+@media(min-width: 700px) {
+    .container-p2 {
+        flex-direction: row;
+    }
+}
+
+.set1 {
+    font-family: sans-serif;
+    color: coral;
+}
+
+.su_nghiep.set1 {
+    flex: 1.5;
+    margin-right: 20px;
+}
+
+.phong_cach_thi_dau {
+    flex: 1.5
+}
+
+.danh_hieu_ca_nhan {
+    flex: 2;
+}
+
+.box-reason {
+    background-color: rgb(169, 173, 172);
+    width: 100%;
+    height: 700px;
+    margin-bottom: 200px;
+}
+
+.set2 {
+    font-family: sans-serif;
+    color: rgba(224, 29, 22, 0.945);
+    /* margin: 50px 0 50px  500px  ;
+    padding-top: 50px; */
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.reason-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 700px) {
+    .reason-container {
+        flex-direction: row;
+    }
+}
+
+.reason:nth-child(1) {
+    /* width: 100%; 
+    height: 600px;  */
+    background-color: aqua;
+    font-family: sans-serif;
+    flex: 3;
+}
+
+.reason:nth-child(2) {
+    /* width: 100%; 
+    height: 500px;  */
+    background-color: palevioletred;
+    font-family: sans-serif;
+    flex: 2.5;
+}
+
+.reason:nth-child(3) {
+    /* width: 100%; 
+    height: 300px; */
+    flex: 1.5;
+    background-color: yellow;
+    font-family: sans-serif;
+}
+
+.under {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: rgba(192, 192, 192, 0.5);
+    position: fixed;
+}
+
+.dangnhap {
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#li-lich {
+    color: orange;
+}
+
+li:hover {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+:root {
+    --ma-mau1: red;
+    --ma-mau2: green;
+    --ma-mau3: blue;
+}
+
+h2 {
+    color: var(--ma-mau1);
+}
+
+h3 {
+    color: blue;
+    margin-left: 100px;
+}
+
+button {
+    color: #ea7c46;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: left;
+}
+
+.box1 {
+    background-color: var(--ma-mau1);
+}
+
+.box2 {
+    background-color: var(--ma-mau2);
+    border: 4px dashed red;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    background-clip: padding-box;
+}
+
+.box3 {
+    background-color: var(--ma-mau3);
+}
+
+.anh-nen {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/background-css-javascript/CSS%20Wave%20Background%20Animation%20%281%29.png), linear-gradient(0, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+@media(min-width: 700px) {
+    .btn-container {
+        flex-direction: row;
+    }
+}
+
+.btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 13px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    min-width: 190px;
+}
+
+.btn--tactics {
+    background-color: green;
+    margin-left: 50px;
+}
+
+.btn--tactics:hover {
+    opacity: 0.5;
+}
+
+.btn--gameplay {
+    background-color: yellow;
+    margin-left: 200px;
+}
+
+.btn--gameplay:hover {
+    opacity: 0.5;
+}
+
+.btn--ranking {
+    background-color: red;
+    margin-left: 200px;
+}
+
+.btn--ranking:hover {
+    opacity: 0.5;
+}
+
+
+/* chỉ hoạt động khi có element có tên thuộc class or id giống y nó  */
+
+.btn+.btn {
+    margin-left: 200px;
+}
+
+#block-toast {
+    margin-top: 50px;
+    max-width: 400px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 20px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.8);
+    font-size: 15px;
+    font-family: sans-serif;
+    animation: slidetoleft ease 1s, fadeout linear 3s 3s forwards;
+}
+
+@keyframes slidetoleft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* animation-delay: 3s; */
+    }
+}
+
+@keyframes fadeout {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast__icon {
+    color: black;
+    font-size: 24px;
+    /* color: green; */
+}
+
+.toast__body {
+    margin-left: 30px;
+    padding-right: 50px;
+    flex: 1;
+}
+
+.toast__close {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    align-content: flex-end;
+}
+
+.toast--success {
+    background-color: greenyellow;
+}
+
+.toast--success .toast__icon {
+    color: green;
+}
+
+.toast--success .toast__head {
+    color: black;
+    font-size: 20px;
+}
+
+.toast--success .toast__pa {
+    color: black;
+    font-size: 15px;
+}
+
+.toast--shopping {
+    background-color: red;
+}
+
+.toast--shopping .toast__icon {
+    color: white;
+}
+
+.toast--shopping .toast__head {
+    color: white;
+    font-size: 15px;
+}
+
+.toast--shopping .toast__pa {
+    color: white;
+}
+
+.toast--register {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.toast--register .toast__icon {
+    color: rgba(35, 216, 223, 0.5);
+}
+
+.toast--register .toast__head {
+    color: black;
+    font-size: 15px;
+}
+
+.toast--register .toast__register {
+    color: black;
+}
